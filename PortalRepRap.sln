@@ -1,21 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap", "PortalRepRap\PortalRepRap.csproj", "{A0BEFBFF-A2EF-473F-8070-6FD022AC6E07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Web", "PortalRepRap\PortalRepRap.Web.csproj", "{A0BEFBFF-A2EF-473F-8070-6FD022AC6E07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{53E51B04-8844-4D8B-AD52-06A5D5E988D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork", "UnitOfWork\UnitOfWork.csproj", "{D07482DB-350A-4F2F-80CB-6AEF4DA1A084}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Framework.UnitOfWork", "UnitOfWork\PortalRepRap.Framework.UnitOfWork.csproj", "{D07482DB-350A-4F2F-80CB-6AEF4DA1A084}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{61E3D95D-FB43-4776-A060-D7D3BFD04C3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0170A01E-CC8C-473A-8799-0C37ABDD527A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappings", "Mappings\Mappings.csproj", "{8FD04B85-9CEC-4433-8052-DF5A023731A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Database.Mappings", "Mappings\PortalRepRap.Database.Mappings.csproj", "{8FD04B85-9CEC-4433-8052-DF5A023731A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{07D8392F-FACA-461F-B33A-62A66E8DE192}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{0E302656-840F-4A96-9025-9B39BE51D440}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Domain", "Domain\PortalRepRap.Domain.csproj", "{0E302656-840F-4A96-9025-9B39BE51D440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Framework.Repository", "Repository\PortalRepRap.Framework.Repository.csproj", "{4F430CE8-C0B0-46A1-AC77-EBACEDCB7DFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLScripts", "SQLScripts", "{26897AE3-8F71-47C1-8100-A3BCF68AAF1D}"
+	ProjectSection(SolutionItems) = preProject
+		PortalRepRap\Database\SQLScripts\201308202143_CreateDatabase.sql = PortalRepRap\Database\SQLScripts\201308202143_CreateDatabase.sql
+		PortalRepRap\Database\SQLScripts\201308202148_CreateTables.sql = PortalRepRap\Database\SQLScripts\201308202148_CreateTables.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Framework.NLog", "NLog\PortalRepRap.Framework.NLog.csproj", "{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,14 +49,25 @@ Global
 		{0E302656-840F-4A96-9025-9B39BE51D440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E302656-840F-4A96-9025-9B39BE51D440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E302656-840F-4A96-9025-9B39BE51D440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F430CE8-C0B0-46A1-AC77-EBACEDCB7DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F430CE8-C0B0-46A1-AC77-EBACEDCB7DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F430CE8-C0B0-46A1-AC77-EBACEDCB7DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F430CE8-C0B0-46A1-AC77-EBACEDCB7DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D07482DB-350A-4F2F-80CB-6AEF4DA1A084} = {53E51B04-8844-4D8B-AD52-06A5D5E988D7}
 		{A0BEFBFF-A2EF-473F-8070-6FD022AC6E07} = {61E3D95D-FB43-4776-A060-D7D3BFD04C3C}
+		{D07482DB-350A-4F2F-80CB-6AEF4DA1A084} = {53E51B04-8844-4D8B-AD52-06A5D5E988D7}
+		{4F430CE8-C0B0-46A1-AC77-EBACEDCB7DFA} = {53E51B04-8844-4D8B-AD52-06A5D5E988D7}
+		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13} = {53E51B04-8844-4D8B-AD52-06A5D5E988D7}
 		{8FD04B85-9CEC-4433-8052-DF5A023731A7} = {0170A01E-CC8C-473A-8799-0C37ABDD527A}
+		{26897AE3-8F71-47C1-8100-A3BCF68AAF1D} = {0170A01E-CC8C-473A-8799-0C37ABDD527A}
 		{0E302656-840F-4A96-9025-9B39BE51D440} = {07D8392F-FACA-461F-B33A-62A66E8DE192}
 	EndGlobalSection
 EndGlobal

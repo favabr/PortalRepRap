@@ -1,0 +1,13 @@
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\PortalRepRap.Database.Mappings.dll
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\PortalRepRap.Database.Mappings.pdb
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\FluentNHibernate.dll
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\Iesi.Collections.dll
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\NHibernate.dll
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\PortalRepRap.Domain.dll
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\PortalRepRap.Domain.pdb
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\FluentNHibernate.xml
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\Iesi.Collections.xml
+C:\projetos\VS2012\PortalRepRap\Mappings\bin\Debug\NHibernate.xml
+C:\projetos\VS2012\PortalRepRap\Mappings\obj\Debug\PortalRepRap.Database.Mappings.csprojResolveAssemblyReference.cache
+C:\projetos\VS2012\PortalRepRap\Mappings\obj\Debug\PortalRepRap.Database.Mappings.dll
+C:\projetos\VS2012\PortalRepRap\Mappings\obj\Debug\PortalRepRap.Database.Mappings.pdb

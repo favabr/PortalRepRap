@@ -1,0 +1,4 @@
+C:\projetos\VS2012\PortalRepRap\Domain\bin\Debug\PortalRepRap.Domain.dll
+C:\projetos\VS2012\PortalRepRap\Domain\bin\Debug\PortalRepRap.Domain.pdb
+C:\projetos\VS2012\PortalRepRap\Domain\obj\Debug\PortalRepRap.Domain.dll
+C:\projetos\VS2012\PortalRepRap\Domain\obj\Debug\PortalRepRap.Domain.pdb

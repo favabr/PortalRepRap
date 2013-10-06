@@ -7,7 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using PortalRepRap.Framework.UnitOfWork;
 
-namespace PortalRepRap
+namespace PortalRepRap.Web
 {
 
     public class MvcApplication : System.Web.HttpApplication

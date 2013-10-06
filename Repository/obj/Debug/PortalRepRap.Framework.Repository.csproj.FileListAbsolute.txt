@@ -1,0 +1,13 @@
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\PortalRepRap.Framework.Repository.dll
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\PortalRepRap.Framework.Repository.pdb
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\Iesi.Collections.dll
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\NHibernate.dll
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\PortalRepRap.Framework.UnitOfWork.dll
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\FluentNHibernate.dll
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\PortalRepRap.Framework.UnitOfWork.pdb
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\Iesi.Collections.xml
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\NHibernate.xml
+C:\projetos\VS2012\PortalRepRap\Repository\bin\Debug\FluentNHibernate.xml
+C:\projetos\VS2012\PortalRepRap\Repository\obj\Debug\PortalRepRap.Framework.Repository.csprojResolveAssemblyReference.cache
+C:\projetos\VS2012\PortalRepRap\Repository\obj\Debug\PortalRepRap.Framework.Repository.dll
+C:\projetos\VS2012\PortalRepRap\Repository\obj\Debug\PortalRepRap.Framework.Repository.pdb

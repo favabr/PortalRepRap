@@ -86,8 +86,6 @@ C:\projetos\VS2012\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.pdb
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\FluentNHibernate.dll
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\Iesi.Collections.dll
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\NHibernate.dll
-C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\UnitOfWork.dll
-C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\UnitOfWork.pdb
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\FluentNHibernate.xml
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\Iesi.Collections.xml
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\NHibernate.xml
@@ -95,3 +93,5 @@ C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\PortalRepRap.Database.Mappings.
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\PortalRepRap.Domain.dll
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\PortalRepRap.Domain.pdb
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\PortalRepRap.Database.Mappings.pdb
+C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\PortalRepRap.Framework.UnitOfWork.dll
+C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\PortalRepRap.Framework.UnitOfWork.pdb
