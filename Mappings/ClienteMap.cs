@@ -7,9 +7,9 @@ using System.Web;
 
 namespace PortalRepRap.Database.Mappings
 {
-    public class ClientesMap : ClassMap<Clientes>
+    public class ClienteMap : ClassMap<Cliente>
     {
-        public ClientesMap()
+        public ClienteMap()
         {
             Id(x => x.ID);
             Map(x => x.Nome);

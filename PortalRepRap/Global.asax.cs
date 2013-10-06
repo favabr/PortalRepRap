@@ -1,53 +1,56 @@
-﻿using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
-using NHibernate;
-using NHibernate.Context;
-using PortalRepRap.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+﻿using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Threading;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using PortalRepRap.Framework.UnitOfWork;
 
 namespace PortalRepRap
 {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-    // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static ISessionFactory SessionFactory { get; private set; }
-
         protected void Application_Start()
         {
+            var culture = new CultureInfo("pt-BR");
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+
             AreaRegistration.RegisterAllAreas();
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AuthConfig.RegisterAuth();
 
-            SessionFactory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2008
-                .ConnectionString(@"Data Source=My2008SQLServer;Initial Catalog=FeestBeest;Persist Security Info=True;User ID=sa;Password=sa"))
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Clientes>())
-            .ExposeConfiguration(c => c.SetProperty("current_session_context_class", "web"))
-            .BuildSessionFactory();
+            ClientDataTypeModelValidatorProvider.ResourceClassKey = "MvcResources";
+            DefaultModelBinder.ResourceClassKey = "MvcResources";
+
+            //ModelMetadataProviders.Current = new MetadataProvider();
         }
 
-        protected void Application_BeginRequest(object sender, EventArgs e)
+        protected virtual void Application_BeginRequest()
         {
-            var session = SessionFactory.OpenSession();
-            CurrentSessionContext.Bind(session);
+            if (Context.Request.RawUrl.StartsWith("/Images/"))
+                return;
+            UnitOfWork.Start();
         }
 
-        protected void Application_EndRequest(object sender, EventArgs e)
+        protected virtual void Application_EndRequest()
         {
-            var session = CurrentSessionContext.Unbind(SessionFactory);
-            session.Dispose();
+            if (UnitOfWork.IsStarted)
+            {
+                if (UnitOfWork.Current.HasPendingChanges)
+                    UnitOfWork.Current.TransactionalFlush();
+                UnitOfWork.Current.Dispose();
+            }
+        }
+
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            if (UnitOfWork.Current != null)
+                UnitOfWork.Current.Dispose();
         }
     }
 }

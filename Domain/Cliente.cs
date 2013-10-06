@@ -1,12 +1,11 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace PortalRepRap.Domain
 {
-    public class Clientes
+    public class Cliente
     {
         public virtual int ID { get; set; }
         public virtual string Nome { get; set; }

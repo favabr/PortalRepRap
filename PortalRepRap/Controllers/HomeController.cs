@@ -1,4 +1,8 @@
-﻿using System;
+﻿using NHibernate;
+using NHibernate.Context;
+using PortalRepRap.Database.Repository;
+using PortalRepRap.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +14,8 @@ namespace PortalRepRap.Controllers
     {
         public ActionResult Index()
         {
+            //var clientes = _Repository.GetAllProducts();
+
             return View();
         }
 
