@@ -44,3 +44,7 @@ C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\System.Web.WebPages.Deployment.
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\System.Web.WebPages.Razor.xml
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.Web.dll
 C:\projetos\VS2012\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.Web.pdb
+C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\System.Net.Http.dll
+C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\System.Net.Http.WebRequest.dll
+C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\System.Net.Http.xml
+C:\projetos\VS2012\PortalRepRap\PortalRepRap\bin\System.Net.Http.WebRequest.xml

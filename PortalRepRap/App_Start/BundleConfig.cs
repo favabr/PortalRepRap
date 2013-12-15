@@ -18,13 +18,16 @@ namespace PortalRepRap
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                        "~/Scripts/bootstrap/bootstrap.js",
+                        "~/Scripts/slider/jquery.nivo.slider.pack.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css",
-                        "~/Content/css/bootstrap.min.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
@@ -41,7 +44,8 @@ namespace PortalRepRap
                         "~/Content/themes/base/jquery.ui.theme.css"));
 
             bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
-                        "~/Content/css/bootstrap.min.css"));
+                        "~/Content/bootstrap/bootstrap.css",
+                        "~/Content/slider/nivo-slider.css", "~/Content/slider/themes/default/default.css"));
         }
     }
 }

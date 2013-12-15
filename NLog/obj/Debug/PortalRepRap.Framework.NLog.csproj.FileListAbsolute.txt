@@ -4,3 +4,4 @@ C:\projetos\VS2012\PortalRepRap\NLog\bin\Debug\NLog.dll
 C:\projetos\VS2012\PortalRepRap\NLog\bin\Debug\NLog.xml
 C:\projetos\VS2012\PortalRepRap\NLog\obj\Debug\PortalRepRap.Framework.NLog.dll
 C:\projetos\VS2012\PortalRepRap\NLog\obj\Debug\PortalRepRap.Framework.NLog.pdb
+C:\projetos\VS2012\PortalRepRap\NLog\obj\Debug\PortalRepRap.Framework.NLog.csprojResolveAssemblyReference.cache

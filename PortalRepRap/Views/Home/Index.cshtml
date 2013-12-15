@@ -1,11 +1,36 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+
+<script>
+    $(document).ready(function () {
+        $('#slider').nivoSlider({
+            effect: 'boxRandom',
+            pauseTime: 4000,
+            animspeed: 500,
+            pauseOnHover: true,
+            captionOpacity: 1,
+            afterLoad: function () { $('#slider .nivo-caption p').css("left", "15px") },
+            beforeChange: function () { $('#slider .nivo-caption p').css("left", "-500px") },
+            afterChange: function () { $('#slider .nivo-caption p').css("left", "15px") }
+        });
+    });
+</script>
+
 @section featured {
+    <div class="space10"></div>
     <section class="featured">
-        <div id="cf3" class="row image-center">
-            <img class="bottom" src="http://store.makerbot.com/media/catalog/product/cache/1/image/470x430/9df78eab33525d08d6e5fb8d27136e95/r/e/rep2_carousel_470x410_1.jpg" />
-            <img class="top" src="http://reprap.org/mediawiki/images/thumb/4/48/Cerberus.jpg/428px-Cerberus.jpg" />
+        <div id="wrapper">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider" style="width: 100%; height: 400px;">
+                    <img src="http://store.makerbot.com/media/catalog/product/cache/1/image/470x430/9df78eab33525d08d6e5fb8d27136e95/r/e/rep2_carousel_470x410_1.jpg" data-thumb="images/toystory.jpg" title="Slide Description goes here. DeadSerious t-shirt for girls!" alt="Slide Description goes here. DeadSerious t-shirt for girls!" />
+                    <a href="http://dev7studios.com">
+                        <img src="http://reprap.org/mediawiki/images/thumb/4/48/Cerberus.jpg/428px-Cerberus.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
+                </div>
+                @*<div id="htmlcaption" class="nivo-html-caption">
+                    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                </div>*@
+            </div>
         </div>
     </section>
 }

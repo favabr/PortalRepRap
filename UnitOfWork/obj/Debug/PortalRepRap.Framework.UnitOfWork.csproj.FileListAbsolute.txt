@@ -8,3 +8,4 @@ C:\projetos\VS2012\PortalRepRap\UnitOfWork\bin\Debug\Iesi.Collections.xml
 C:\projetos\VS2012\PortalRepRap\UnitOfWork\bin\Debug\NHibernate.xml
 C:\projetos\VS2012\PortalRepRap\UnitOfWork\obj\Debug\PortalRepRap.Framework.UnitOfWork.dll
 C:\projetos\VS2012\PortalRepRap\UnitOfWork\obj\Debug\PortalRepRap.Framework.UnitOfWork.pdb
+C:\projetos\VS2012\PortalRepRap\UnitOfWork\obj\Debug\PortalRepRap.Framework.UnitOfWork.csprojResolveAssemblyReference.cache

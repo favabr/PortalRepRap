@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLScripts", "SQLScripts", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Framework.NLog", "NLog\PortalRepRap.Framework.NLog.csproj", "{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{3C0A2D06-F5AD-4A4A-B7E8-89B5B2975A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Tools.ThingiverseDownloader", "PortalRepRap.Tools.ThingiverseDownloader\PortalRepRap.Tools.ThingiverseDownloader.csproj", "{2998007C-EB14-4626-B092-41926BA8F542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49D9148D-BE53-4C83-BC74-DF2A9E52CA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2998007C-EB14-4626-B092-41926BA8F542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2998007C-EB14-4626-B092-41926BA8F542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2998007C-EB14-4626-B092-41926BA8F542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2998007C-EB14-4626-B092-41926BA8F542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +77,6 @@ Global
 		{8FD04B85-9CEC-4433-8052-DF5A023731A7} = {0170A01E-CC8C-473A-8799-0C37ABDD527A}
 		{26897AE3-8F71-47C1-8100-A3BCF68AAF1D} = {0170A01E-CC8C-473A-8799-0C37ABDD527A}
 		{0E302656-840F-4A96-9025-9B39BE51D440} = {07D8392F-FACA-461F-B33A-62A66E8DE192}
+		{2998007C-EB14-4626-B092-41926BA8F542} = {3C0A2D06-F5AD-4A4A-B7E8-89B5B2975A59}
 	EndGlobalSection
 EndGlobal

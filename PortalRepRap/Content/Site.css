@@ -1,4 +1,5 @@
-﻿html {
+﻿/* All */
+html {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -7,63 +8,156 @@
 body {
     background-color: #fff;
     font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-family: 'Open Sans', Arial, tahoma, Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
 }
 
-.header {
-    background-color: #161E27; /*#6C7A89;*/
-    height: 75px;
+a {
+    color: #666666 !important;
+    text-decoration: underline !important;
+}
+
+a:hover {
+    color: #33333f !important;
+    text-decoration: underline !important;
 }
 
 #body {
-    width: 60%;
-    margin: 0 auto;
+    padding: 0 60px 0 30px;
 }
 
-/* Image transition */
-#cf3 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
+/***Espacamento e Ajustes***/
+.space10 {
+    clear: both;
+    width: 100%;
+    height: 10px;
 }
 
-#cf3 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+.space20 {
+    clear: both;
+    width: 100%;
+    height: 20px;
 }
 
-@keyframes cf3FadeInOut {
-  0% {
-  opacity:1;
-}
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
+.space30 {
+    clear: both;
+    width: 100%;
+    height: 30px;
 }
 
-#cf3 img.top {
-animation-name: cf3FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 10s;
-animation-direction: alternate;
+.space40 {
+    clear: both;
+    width: 100%;
+    height: 40px;
 }
 
-/* Center image */
-.image-center {
-    width: 50%;
-    margin: 0 auto;
+.space50 {
+    clear: both;
+    width: 100%;
+    height: 50px;
+}
+
+.space60 {
+    clear: both;
+    width: 100%;
+    height: 60px;
+}
+/***/
+
+/* Bootstrap override */
+/* dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu-item {
+    color: #999 !important;
+}
+
+.dropdown-menu-item a:hover {
+    background-color: #0d9447 !important;
+    color: #fff !important;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+/* end of dropdown */
+.glyphicon {
+    color: #9d9d9d;
+}
+/* end of Bootstrap override */
+
+/* Header */
+.header-container {
+    padding: 0 60px 0 30px;
+}
+
+.header-line {
+    background-color: #333333;
+    height: 7px;
+}
+
+.header-welcome {
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+}
+
+.header-title {
+    font-family: 'Arial Black', Arial;
+    font-weight: 900;
+    color: #333333;
+}
+
+.header-title-dot {
+    font-family: 'Arial Black', Arial;
+    font-weight: 900;
+    color: #0d9447;
+}
+
+.nav-pills a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+    text-decoration: none !important;
+}
+
+.header-cart {
+    background-color: #333333;
+    width: 60px;
+    height: 30px;
+    color: #fff;
+}
+
+.header-cart-itens {
+    padding: 0 0 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.header-menu-nav li a {
+    font-size: 14px !important;
+    color: #6d6d66 !important;
+    line-height: 14px !important;
+    text-decoration: none !important;
+    display: block !important;
+    /*z-index: 10000 !important;
+    position: relative !important;
+    padding: 10px !important;*/
+    border: 1px solid #fff !important;
+    border-bottom: 0 !important;
+    font-weight: 600 !important;
+}
+
+.header-menu-nav li a:hover {
+    color: #33333f !important;
+}
+
+/* Footer */
+.content-wrapper {
+    padding: 0 60px 0 30px;
 }
