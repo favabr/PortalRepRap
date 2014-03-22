@@ -16,6 +16,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Core.Repository", "PortalRepRap.Core.Repository\PortalRepRap.Core.Repository.csproj", "{19E6D7BB-7948-429E-A19A-EEB05C827064}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{986FCF6B-5DCD-40B8-AB7D-DCA66F4E6AFC}"
+	ProjectSection(SolutionItems) = preProject
+		201308202143_CreateDatabase.sql = 201308202143_CreateDatabase.sql
+		201308202148_CreateTables.sql = 201308202148_CreateTables.sql
+		201312152138_ProductTables.sql = 201312152138_ProductTables.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalRepRap.Adm", "PortalRepRap.Adm\PortalRepRap.Adm.csproj", "{E0CA7797-3A9A-45CA-B5A9-FAB3399FAF3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +50,10 @@ Global
 		{19E6D7BB-7948-429E-A19A-EEB05C827064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E6D7BB-7948-429E-A19A-EEB05C827064}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E6D7BB-7948-429E-A19A-EEB05C827064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CA7797-3A9A-45CA-B5A9-FAB3399FAF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CA7797-3A9A-45CA-B5A9-FAB3399FAF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CA7797-3A9A-45CA-B5A9-FAB3399FAF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CA7797-3A9A-45CA-B5A9-FAB3399FAF3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,3 @@
-C:\projetos\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.csprojResolveAssemblyReference.cache
 C:\projetos\PortalRepRap\PortalRepRap\bin\PortalRepRap.dll.config
 C:\projetos\PortalRepRap\PortalRepRap\bin\PortalRepRap.dll
 C:\projetos\PortalRepRap\PortalRepRap\bin\PortalRepRap.pdb
@@ -36,5 +35,6 @@ C:\projetos\PortalRepRap\PortalRepRap\bin\System.Web.Webpages.Deployment.xml
 C:\projetos\PortalRepRap\PortalRepRap\bin\System.Web.Webpages.Razor.xml
 C:\projetos\PortalRepRap\PortalRepRap\bin\System.Web.Helpers.xml
 C:\projetos\PortalRepRap\PortalRepRap\bin\System.Web.Mvc.xml
+C:\projetos\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.csprojResolveAssemblyReference.cache
 C:\projetos\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.dll
 C:\projetos\PortalRepRap\PortalRepRap\obj\Debug\PortalRepRap.pdb
