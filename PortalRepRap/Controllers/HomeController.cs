@@ -1,21 +1,20 @@
-﻿using NHibernate;
-using NHibernate.Context;
-using PortalRepRap.Database.Repository;
-using PortalRepRap.Domain;
-using PortalRepRap.Web.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using PortalRepRap.Web.Models;
 
-namespace PortalRepRap.Controllers
+namespace PortalRepRap.Web.Controllers
 {
     public class HomeController : BaseController
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new HeaderModel();
+            model.Populate();
+            return View(model);
+        }
+
+        public ActionResult Header(HeaderModel model)
+        {
+            return View("_Header", model);
         }
     }
 }

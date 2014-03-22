@@ -1,9 +1,0 @@
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\bin\Debug\PortalRepRap.Tools.ThingiverseDownloader.exe.config
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\bin\Debug\PortalRepRap.Tools.ThingiverseDownloader.exe
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\bin\Debug\PortalRepRap.Tools.ThingiverseDownloader.pdb
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\obj\Debug\PortalRepRap.Tools.ThingiverseDownloader.csprojResolveAssemblyReference.cache
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\obj\Debug\PortalRepRap.Tools.ThingiverseDownloader.frmMain.resources
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\obj\Debug\PortalRepRap.Tools.ThingiverseDownloader.Properties.Resources.resources
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\obj\Debug\PortalRepRap.Tools.ThingiverseDownloader.csproj.GenerateResource.Cache
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\obj\Debug\PortalRepRap.Tools.ThingiverseDownloader.exe
-C:\projetos\VS2012\PortalRepRap\PortalRepRap.Tools.ThingiverseDownloader\obj\Debug\PortalRepRap.Tools.ThingiverseDownloader.pdb

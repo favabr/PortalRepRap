@@ -1,56 +1,31 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
-using System.Web.Optimization;
 using System.Web.Routing;
-using PortalRepRap.Framework.UnitOfWork;
+using PortalRepRap.Core.DAL;
 
-namespace PortalRepRap.Web
+namespace PortalRepRap
 {
-
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
         {
-            var culture = new CultureInfo("pt-BR");
-            Thread.CurrentThread.CurrentCulture = culture;
-            Thread.CurrentThread.CurrentUICulture = culture;
-
             AreaRegistration.RegisterAllAreas();
-
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            ClientDataTypeModelValidatorProvider.ResourceClassKey = "MvcResources";
-            DefaultModelBinder.ResourceClassKey = "MvcResources";
-
-            //ModelMetadataProviders.Current = new MetadataProvider();
         }
 
         protected virtual void Application_BeginRequest()
         {
-            if (Context.Request.RawUrl.StartsWith("/Images/"))
-                return;
-            UnitOfWork.Start();
+            HttpContext.Current.Items["_EntityContext"] = new EntityContext();
         }
 
         protected virtual void Application_EndRequest()
         {
-            if (UnitOfWork.IsStarted)
-            {
-                if (UnitOfWork.Current.HasPendingChanges)
-                    UnitOfWork.Current.TransactionalFlush();
-                UnitOfWork.Current.Dispose();
-            }
-        }
-
-        protected void Application_Error(object sender, EventArgs e)
-        {
-            if (UnitOfWork.Current != null)
-                UnitOfWork.Current.Dispose();
+            var entityContext = HttpContext.Current.Items["_EntityContext"] as EntityContext;
+            if (entityContext != null)
+                entityContext.Dispose();
         }
     }
 }

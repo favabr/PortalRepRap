@@ -1,4 +1,6 @@
-﻿<div class="header-line"></div>
+﻿@model PortalRepRap.Web.Models.HeaderModel
+
+<div class="header-line"></div>
 <div class="header-container">
     <div class="row">
         <div class="col-md-4 header-welcome">
@@ -25,7 +27,8 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <img src="~/Content/img/header/cart.png" />
-                        Meu carrinho</a>
+                        Meu carrinho
+                    </a>
                 </li>
             </ul>
         </div>
@@ -47,24 +50,21 @@
                         <li class="dropdown-menu-item"><a href="#">HOME</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">FERRAGENS</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="#">FERRAGENS</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">KITS</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="#">KITS</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODELOS</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="#">MODELOS</a></li>
-                    </ul>
-                </li>
+                @foreach (var category in Model.ProdutoCategoriasList)
+                {
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">@category.Nome.ToUpper()</a>
+                        @foreach (var subcategory in Model.ProdutoSubCategoriasList)
+                        {
+                            if (subcategory.ProdutoCategoriasModel != null && subcategory.ProdutoCategoriasModel.Id == category.Id)
+                            {
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-item"><a href="#">@subcategory.Nome</a></li>
+                                </ul>
+                            }
+                        }
+                    </li>
+                }
             </ul>
         </div>
         <div class="col-md-4">

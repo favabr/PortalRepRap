@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
-using NLog;
-using PortalRepRap.Framework.NLog;
+using PortalRepRap.Core.NLog;
 
 namespace PortalRepRap.Web.Controllers
 {
